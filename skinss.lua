@@ -38,7 +38,7 @@ q = gg.choice({
 if q == nil then else
 if q == 1 then A1() end
 if q == 2 then A2() end
-if q == 2 then home() end
+if q == 3 then home() end
 end
 AJL = -1
 end
