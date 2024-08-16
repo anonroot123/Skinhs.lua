@@ -37,13 +37,13 @@ q = gg.choice({
 },nil, "𝘾𝙀𝙎𝙎 𝗦𝗖𝗥𝗜𝗣𝗧")
 if q == nil then else
 if q == 1 then A1() end
-if q == 2 then A2() end
+if q == 2 then A2f() end
 if q == 3 then home() end
 end
 AJL = -1
 end
 
-function A2()
+function A2f()
   local xCy26, xVgF62 = tonumber, string.char
     local FVca6, Sn62V = table.unpack, table.concat
     local function GfGv9KpLzQ(a) return xVgF62(FVca6(a)) end
