@@ -40,7 +40,7 @@ if q == 1 then A1() end
 if q == 2 then A2f() end
 if q == 3 then home() end
 end
-AJL = -1
+CESS = -1
 end
 
 function A2f()
