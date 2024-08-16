@@ -1,7 +1,7 @@
 function czk(Search, Write, Type) gg.clearResults() gg.setVisible(false) gg.searchNumber(Search[1][1], Type) local count = gg.getResultCount() local result = gg.getResults(count) gg.clearResults() local data = {} local base = Search[1][2] if (count > 0) then for i, v in ipairs(result) do v.isUseful = true end for k=2, #Search do local tmp = {} local offset = Search[k][2] - base local num = Search[k][1] for i, v in ipairs(result) do tmp[#tmp+1] = {} tmp[#tmp].address = v.address + offset tmp[#tmp].flags = v.flags end tmp = gg.getValues(tmp) for i, v in ipairs(tmp) do if ( tostring(v.value) ~= tostring(num) ) then result[i].isUseful = false end end end for i, v in ipairs(result) do if (v.isUseful) then data[#data+1] = v.address end end if (#data > 0) then gg.toast('Results '..#data..' Edited') local t = {} local base = Search[1][2] for i=1, #data do for k, w in ipairs(Write) do offset = w[2] - base t[#t+1] = {} t[#t].address = data[i] + offset t[#t].flags = Type t[#t].value = w[1] if (w[3] == true) then local item = {} item[#item+1] = t[#t] item[#item].freeze = true gg.addListItems(item) end end end gg.setValues(t) else return false end else return false end end
 
 
-local HexPatches = {}
+--[[local HexPatches = {}
 function HexPatches.ajl(Lib,Offset,Edit,Type)
 local Ranges = gg.getRangesList(Lib)
 local v = {}
@@ -25,7 +25,7 @@ local tt={} tt[1]={} tt[1].address=address tt[1].flags=flags tt[1].value=value g
 
 
 
-
+]]
 CESS = 1
 
 
@@ -40,7 +40,7 @@ if q == 1 then A1() end
 if q == 2 then A2f() end
 if q == 3 then home() end
 end
-CESS = -1
+AJL = -1
 end
 
 function A2f()
@@ -7086,30 +7086,13 @@ end
 
 
 
-function EXIT()
-gg.alert(("☣𝙂𝘼𝙍𝙀𝙉𝘼 𝘾𝙊𝘿𝙈 𝙑𝙄𝙋☣"))
-    print(("⠀⢠⣶⣿⣿⣗⡢⠀⠀⠀⠀⠀⠀⢤⣒⣿⣿⣷⣆⠀⠀"))
-    print(("⠀⠋⠉⠉⠙⠻⣿⣷⡄⠀⠀⠀⣴⣿⠿⠛⠉⠉⠉⠃⠀"))
-    print(("⠀⠀⢀⡠⢤⣠⣀⡹⡄⠀⠀⠀⡞⣁⣤⣠⠤⡀⠀⠀⠀"))
-    print(("⢐⡤⢾⣿⣿⢿⣿⡿⠀⠀⠀⠀⠸⣿⣿⢿⣿⣾⠦⣌⠀"))
-    print(("⠁⠀⠀⠀⠉⠈⠀⠀⣸⠀⠀⢰⡀⠀⠈⠈⠀⠀⠀⠀⠁"))
-    print(("⠀⠀⠀⠀⠀⠀⣀⡔⢹⠀⠀⢸⠳⡄⡀⠀⠀⠀⠀⠀⠀"))
-    print(("⠸⡦⣤⠤⠒⠋⠘⢠⡸⣀⣀⡸⣠⠘⠉⠓⠠⣤⢤⡞⠀"))
-    print(("⠀⢹⡜⢷⣄⠀⣀⣀⣾⡶⢶⣷⣄⣀⡀⢀⣴⢏⡾⠁⠀"))
-    print(("⠀⠀⠹⡮⡛⠛⠛⠻⠿⠥⠤⠽⠿⠛⠛⠛⣣⡾⠁⠀⠀"))
-    print(("⠀⠀⠀⠙⢄⠁⠀⠀⠀⣄⣀⡄⠀⠀⠀⢁⠞⠀⠀⠀⠀"))
-    print(("⠀⠀⠀⠀⠀⠂⠀⠀⠀⢸⣿⠀⠀⠀⠠⠂⠀⠀⠀⠀⠀"))
-    print(("⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀"))
-    print(("⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀"))
-    print(("☣𝙂𝘼𝙍𝙀𝙉𝘼 𝘾𝙊𝘿𝙈 𝙑𝙄𝙋☣"))
-os.exit() 
-end
+
 
 while true do
 if gg.isVisible(true) then
 CESS = 1
 gg.setVisible(false) end
-if CESS == 1 then
+if AJL == 1 then
 home() 
 end
 end
