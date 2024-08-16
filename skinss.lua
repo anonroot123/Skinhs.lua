@@ -34,7 +34,7 @@ q = gg.choice({
 "《SKINHACKS》",
 "《SKINHACKS UPDATED》",
 "▪︎ᴇxɪᴛ▪︎",
-},nil, "𝘾𝙀𝙎𝙎 𝗦𝗖𝗥𝗜𝗣𝗧")
+},nil, " 𝗦𝗖𝗥𝗜𝗣𝗧")
 if q == nil then else
 if q == 1 then A1() end
 if q == 2 then A2f() end
@@ -7090,9 +7090,9 @@ end
 
 while true do
 if gg.isVisible(true) then
-CESS = 1
+AJL = 1
 gg.setVisible(false) end
-if AJL == 1 then
+if CESS == 1 then
 home() 
 end
 end
