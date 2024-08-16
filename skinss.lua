@@ -7109,7 +7109,7 @@ while true do
 if gg.isVisible(true) then
 CESS = 1
 gg.setVisible(false) end
-if AJL == 1 then
+if CESS == 1 then
 home() 
 end
 end
