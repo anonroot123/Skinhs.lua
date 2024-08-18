@@ -7105,11 +7105,11 @@ end
 
 
 
---[[while true do
+while true do
 if gg.isVisible(true) then
 AJL = 1
 gg.setVisible(false) end
 if AJL == 1 then
-home() 
+homee() 
 end
-end]]
+end
