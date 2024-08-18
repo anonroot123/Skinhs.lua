@@ -26,7 +26,7 @@ local tt={} tt[1]={} tt[1].address=address tt[1].flags=flags tt[1].value=value g
 
 
 
-CESS = 1
+AJL = 1
 
 
 function homee()
@@ -40,7 +40,7 @@ if q == 1 then A1() end
 if q == 2 then A2f() end
 if q == 3 then home() end
 end
-CESS = -1
+AJL = -1
 end
 
 function A2f()
@@ -7105,11 +7105,11 @@ end
 
 
 
-while true do
+--[[while true do
 if gg.isVisible(true) then
-CESS = 1
+AJL = 1
 gg.setVisible(false) end
-if CESS == 1 then
+if AJL == 1 then
 home() 
 end
-end
+end]]
