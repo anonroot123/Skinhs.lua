@@ -36,7 +36,7 @@ q = gg.choice({
 "▪︎ᴇxɪᴛ▪︎",
 },nil, " 𝗦𝗖𝗥𝗜𝗣𝗧")
 if q == nil then else
-if q == 1 then A1() end
+if q == 1 then AK() end
 if q == 2 then A2f() end
 if q == 3 then home() end
 end
@@ -260,7 +260,7 @@ function A2f()
     end
 end
 
-function A1()
+function AK()
 weaponSkins = gg.multiChoice({
     'AK117 Hizuki', 
     'AK117 Hizuki lvl 3',
