@@ -2,7 +2,7 @@ function czk(Search, Write, Type) gg.clearResults() gg.setVisible(false) gg.sear
 
 
 function A3()
-o = gg.choice({
+o = gg.multiChoice({
 "《SKINHACKS》",
 "《SKINHACKS UPDATED》",
 "▪︎ᴇxɪᴛ ▪︎",
