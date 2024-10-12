@@ -8,9 +8,9 @@ o = gg.multiChoice({
 "▪︎ᴇxɪᴛ ▪︎",
 },nil, " 𝗦𝗖𝗥𝗜𝗣𝗧")
 if o == nil then else
-if o == 1 then AK() end
-if o == 2 then A2f() end
-if o == 3 then home() end
+if o == 1 true then AK() end
+if o == 2 true then A2f() end
+if o == 3 true then home() end
 end
 end
 
